@@ -52,7 +52,6 @@
             text-align: center;
             color: white;
             z-index: 1;
-            animation: fadeInUp 1s ease-out;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -68,6 +67,10 @@
         h1 {
             font-size: 4rem;
             margin: 0;
+            overflow: hidden; /* For typing effect */
+            white-space: nowrap; /* Keeps text on one line */
+            border-right: 4px solid white; /* Cursor effect */
+            animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
         }
 
         .profile-photo {
@@ -77,11 +80,13 @@
             object-fit: cover;
             border: 3px solid white;
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
         }
 
         .subtitle {
             font-size: 1.8rem;
-            opacity: 0.9;
+            opacity: 0; /* Start hidden for animation */
+            animation: fadeInSlideUp 1s ease-out 3s forwards; /* Starts after typing */
         }
 
         /* Navigation */
@@ -325,6 +330,21 @@
         }
 
         /* Animations */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
+        }
+
+        @keyframes fadeInSlideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 0.9; transform: translateY(0); }
+        }
+
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -337,8 +357,14 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            .subtitle { font-size: 1.2rem; }
+            h1 { 
+                font-size: 2.5rem; 
+                animation: typing 2.5s steps(20, end) forwards, blink 0.75s step-end infinite;
+            }
+            .subtitle { 
+                font-size: 1.2rem; 
+                animation: fadeInSlideUp 1s ease-out 2.5s forwards;
+            }
             nav ul { gap: 1rem; }
             .section { padding: 3rem 1rem; }
             .about-content {
