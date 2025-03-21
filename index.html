@@ -73,17 +73,16 @@
             margin: 0;
             overflow: hidden;
             white-space: nowrap;
-            border-right: 4px solid white; /* Initial cursor */
+            border-right: 4px solid white;
             animation: typing 3s steps(20, end) forwards, 
-                      blink 0.75s step-end 4; /* Blink 4 times, then stop */
+                      blink 0.75s step-end 4;
         }
 
-        /* Keyframe to remove cursor after typing */
         @keyframes typing {
             from { width: 0; }
             to { 
                 width: 100%; 
-                border-right: none; /* Remove cursor at the end */
+                border-right: none;
             }
         }
 
@@ -168,6 +167,17 @@
             position: absolute;
             bottom: -10px;
             left: 0;
+        }
+
+        /* Placeholder Styling */
+        .updating-soon {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         /* About */
@@ -269,27 +279,6 @@
             background: var(--accent-color);
         }
 
-        /* Thesis Section */
-        .thesis-grid {
-            display: flex;
-            justify-content: center;
-        }
-
-        .thesis-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            max-width: 600px;
-            width: 100%;
-        }
-
-        .thesis-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-
         /* Contact */
         .contact-form {
             background: white;
@@ -359,7 +348,7 @@
             h1 { 
                 font-size: 2.5rem; 
                 animation: typing 2.5s steps(20, end) forwards, 
-                          blink 0.75s step-end 3; /* Blink 3 times, then stop */
+                          blink 0.75s step-end 3;
             }
             .subtitle { 
                 font-size: 1.2rem; 
@@ -379,12 +368,13 @@
                 max-width: 400px;
                 margin: 0 auto;
             }
-            .thesis-card {
-                max-width: 100%;
-            }
             .profile-photo {
                 width: 150px;
                 height: 150px;
+            }
+            .updating-soon {
+                font-size: 1.2rem;
+                padding: 1.5rem;
             }
         }
     </style>
@@ -462,46 +452,12 @@
 
     <section class="section" id="mtech-projects">
         <h2>M.Tech Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://via.placeholder.com/320x200');"></div>
-                <div class="project-content">
-                    <h3>VLSI Chip Design</h3>
-                    <p>An optimized chip design for high-performance computing applications.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://via.placeholder.com/320x200');"></div>
-                <div class="project-content">
-                    <h3>Microelectronic Sensor</h3>
-                    <p>A compact sensor design for real-time environmental monitoring.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://via.placeholder.com/320x200');"></div>
-                <div class="project-content">
-                    <h3>Low-Power VLSI Circuit</h3>
-                    <p>A power-efficient circuit for wearable technology.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-        </div>
+        <div class="updating-soon">Updating Soon</div>
     </section>
 
     <section class="section" id="mtech-thesis">
         <h2>M.Tech Thesis</h2>
-        <div class="thesis-grid">
-            <div class="thesis-card">
-                <div class="project-image" style="background-image: url('https://via.placeholder.com/320x200');"></div>
-                <div class="project-content">
-                    <h3>Advanced VLSI Architecture for Next-Generation Computing</h3>
-                    <p>A comprehensive study and design of a high-efficiency VLSI architecture aimed at enhancing computational performance in emerging technologies.</p>
-                    <a href="#" class="btn">View Thesis</a>
-                </div>
-            </div>
-        </div>
+        <div class="updating-soon">Updating Soon</div>
     </section>
 
     <section class="section" id="contact">
