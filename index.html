@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul K Mahato - Portfolio</title>
-    <link rel="icon" type="image/png" href="logo1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
@@ -142,4 +141,172 @@
             .logo img { height: 24px; }
         }
     </style>
-</head
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo1.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#btech-projects">B.Tech Projects</a></li>
+                <li><a href="#mtech-projects">M.Tech Projects</a></li>
+                <li><a href="#mtech-thesis">M.Tech Thesis</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <img src="27d6944468f979d90b5e46f81a5bcfde.jpg" alt="Rahul K Mahato Profile Photo" class="profile-photo">
+            <h1>Rahul K Mahato</h1>
+            <p class="subtitle">Electronics & Communication Engineer</p>
+            <audio id="typewriterSound" src="typewriter.mp3" preload="auto"></audio>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome! I’m Rahul K Mahato, an accomplished Electronics and Communication Engineer with a Bachelor’s degree from the prestigious Motilal Nehru National Institute of Technology (MNNIT). Currently, I’m advancing my expertise as a <strong>Master of Technology candidate in Microelectronics and VLSI</strong> within the Department of Electronics and Communication Engineering at the Indian Institute of Technology Roorkee (IIT Roorkee), where I’m exploring the frontiers of cutting-edge technology.</p>
+                <p>My journey began at MNNIT, where I immersed myself in the fascinating realm of Electronics and Communication. There, I mastered core disciplines like communication systems and electronic circuit design, building a robust foundation in engineering principles. The rigorous academic environment not only sharpened my technical skills but also ignited a deep-seated passion for innovation and creative problem-solving.</p>
+                <p>Since earning my degree, I’ve been actively engaged in the ever-evolving world of Electronics and Communication. Whether designing state-of-the-art communication systems or tackling intricate electronic circuits, I thrive on challenges that push technological boundaries. My ongoing studies at IIT Roorkee amplify this pursuit, enabling me to innovate at the intersection of microelectronics and VLSI design—fields poised to redefine modern technology.</p>
+                <p>Driven by an insatiable curiosity, I’m committed to exploring emerging trends and harnessing technology’s transformative potential. For me, Electronics and Communication is more than a discipline—it’s a dynamic canvas where creativity and precision converge. Crafting solutions that connect people and enhance communication fuels my career, and I’m dedicated to delivering innovations with lasting societal impact.</p>
+                <p>I warmly invite collaboration and dialogue with fellow enthusiasts, professionals, and inquisitive minds. Let’s connect to explore the captivating world of Electronics and Communication together—there’s so much more to discover!</p>
+                <p><strong>Stay tuned for updates on my latest projects, insights, and reflections on the evolving landscape of technology and communication.</strong></p>
+            </div>
+            <div class="skills card">
+                <h3>Skills</h3>
+                <div class="skill-item">
+                    <p>Communication Systems</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <p>Microelectronics & VLSI</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="btech-projects">
+        <h2>B.Tech Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/320x200');"></div>
+                <div class="project-content">
+                    <h3>Design and Simulation of a Low Power Supply Dynamic Comparator</h3>
+                    <p>Designed a low-power dynamic comparator for ADCs in portable devices, achieving 2.70 µW power consumption and 0.108 pJ energy efficiency using a modified double-tail design with Cadence (90 nm, 1V, 25 MHz). Completed by Dec 2022 under Prof. R.A. Mishra at MNNIT Allahabad with team: Rahul Kumar Mahato, Mahak Rawat, Praval Pratap Singh.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card card">
+                <div class="project-image" style="background-image: url('https://via.placeholder.com/320x200');"></div>
+                <div class="project-content">
+                    <h3>Design and Simulation of Active RC Filters with Independent Parameter Tuning</h3>
+                    <p>Developed active RC filters (band-pass, low-pass, high-pass) with independent tuning of pole frequency, damping, and transfer ratio using LTspice. Completed by May 2023 under Prof. R.A. Mishra at MNNIT Allahabad with team: Rahul Kumar Mahato, Mahak Rawat, Praval Pratap Singh.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="mtech-projects">
+        <h2>M.Tech Projects</h2>
+        <div class="updating-soon card">Updating Soon</div>
+    </section>
+
+    <section class="section" id="mtech-thesis">
+        <h2>M.Tech Thesis</h2>
+        <div class="updating-soon card">Updating Soon</div>
+    </section>
+
+    <section class="section" id="blogs">
+        <div class="blog-search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search blogs...">
+        </div>
+        <div class="blog-grid">
+            <div class="blog-card card">
+                <h3>Exploring Static Site Generators with React</h3>
+                <div class="meta">
+                    <span class="category">Technology</span>
+                    <span class="date">Jun 25, 2023</span>
+                </div>
+            </div>
+            <div class="blog-card card">
+                <h3>Advancements in Microelectronics for 2024</h3>
+                <div class="meta">
+                    <span class="category">Electronics</span>
+                    <span class="date">Jan 15, 2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form card">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/rahulkmahato/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <script>
+        const toggleSwitch = document.querySelector('#theme-toggle');
+        const body = document.body;
+
+        // Load saved theme from localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', savedTheme);
+        toggleSwitch.checked = savedTheme === 'dark';
+
+        // Toggle theme on switch change
+        toggleSwitch.addEventListener('change', () => {
+            const newTheme = toggleSwitch.checked ? 'dark' : 'light';
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Scroll effect
+        window.addEventListener('scroll', () => document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50));
+
+        // Typing sound effect
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('typewriterSound');
+            const duration = window.innerWidth <= 768 ? 2500 : 3000;
+            const steps = 20;
+            let stepCount = 0;
+            const interval = setInterval(() => {
+                if (stepCount < steps) { audio.currentTime = 0; audio.play(); stepCount++; }
+                else clearInterval(interval);
+            }, duration / steps);
+        });
+    </script>
+</body>
+</html>
