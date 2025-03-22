@@ -67,6 +67,7 @@
         nav a { color: white; text-decoration: none; font-weight: 500; position: relative; transition: color 0.3s ease; }
         nav a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background: var(--accent); transition: width 0.3s ease; }
         nav a:hover::after { width: 100%; }
+        .logo img { height: 30px; width: auto; }
 
         /* Slide Toggle */
         .theme-switch { display: inline-flex; align-items: center; }
@@ -94,7 +95,7 @@
         .project-image { height: 200px; background: #ddd; background-size: cover; }
         .project-content { padding: 1.5rem; }
         .btn { display: inline-block; padding: 0.8rem 1.5rem; background: var(--secondary); color: white; text-decoration: none; border-radius: 5px; margin-top: 1rem; transition: background 0.3s ease; }
-        . btn:hover { background: var(--accent); }
+        .btn:hover { background: var(--accent); }
 
         /* Blog Section */
         .blog-search { position: relative; margin-bottom: 2rem; max-width: 500px; }
@@ -137,13 +138,16 @@
             .profile-photo { width: 150px; height: 150px; }
             .updating-soon { font-size: 1.2rem; padding: 1.5rem; }
             .blog-search { max-width: 100%; }
+            .logo img { height: 24px; }
         }
     </style>
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <div class="logo">RKM</div>
+            <div class="logo">
+                <img src="logo1.png" alt="Logo">
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -227,7 +231,6 @@
     </section>
 
     <section class="section" id="blogs">
-        <h2>Blogs</h2>
         <div class="blog-search">
             <i class="fas fa-search"></i>
             <input type="text" placeholder="Search blogs...">
